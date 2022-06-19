@@ -1,0 +1,133 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.6.2 (AdoptOpenJDK Java 1.8.0_292)
+[debug] Load.defaultLoad until apply took 4204.004688ms
+[debug]                 Load.loadUnit: plugins took 1218.467603ms
+[debug]                 Load.loadUnit: defsScala took 2.050696ms
+[debug] [Loading] Scanning directory /home/max/scala1/mylist/project/project
+[debug]                   Load.loadUnit: mkEval took 145.636381ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/max/scala1/mylist/project/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 273.368989 ms
+[info] loading settings for project mylist-build-build from metals.sbt ...
+[debug]                     Load.resolveProject(mylist-build-build) took 593.890581ms
+[debug]                   Load.loadTransitive: finalizeProject(Project(id mylist-build-build, base: /home/max/scala1/mylist/project/project, plugins: List(<none>))) took 1131.082479ms
+[debug] [Loading] Done in /home/max/scala1/mylist/project/project, returning: (mylist-build-build)
+[debug]                 Load.loadUnit: loadedProjectsRaw took 6705.857487ms
+[debug]                 Load.loadUnit: cleanEvalClasses took 63.639025ms
+[debug]               Load.loadUnit(file:/home/max/scala1/mylist/project/project/, ...) took 8024.285415ms
+[debug]             Load.apply: load took 9430.907467ms
+[debug]             Load.apply: resolveProjects took 38.796055ms
+[debug]             Load.apply: finalTransforms took 508.11245ms
+[debug]             Load.apply: config.delegates took 58.959511ms
+[debug]             Load.apply: Def.make(settings)... took 6463.081347ms
+[debug]             Load.apply: structureIndex took 2017.031578ms
+[debug]             Load.apply: mkStreams took 19.758093ms
+[info] loading project definition from /home/max/scala1/mylist/project/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]           Load.loadUnit: plugins took 34569.373462ms
+[debug]           Load.loadUnit: defsScala took 0.034296ms
+[debug] [Loading] Scanning directory /home/max/scala1/mylist/project
+[debug]             Load.loadUnit: mkEval took 0.982839ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/max/scala1/mylist/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(bloop.integrations.sbt.BloopPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(bloop.integrations.sbt.BloopPlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,bloop.integrations.sbt.BloopPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 55.750579 ms
+[info] loading settings for project mylist-build from metals.sbt ...
+[debug]               Load.resolveProject(mylist-build) took 264.142856ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id mylist-build, base: /home/max/scala1/mylist/project, plugins: List(<none>))) took 326.441985ms
+[debug] [Loading] Done in /home/max/scala1/mylist/project, returning: (mylist-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 611.117148ms
+[debug]           Load.loadUnit: cleanEvalClasses took 2.059734ms
+[debug]         Load.loadUnit(file:/home/max/scala1/mylist/project/, ...) took 35186.504505ms
+[debug]       Load.apply: load took 35203.051597ms
+[debug]       Load.apply: resolveProjects took 0.743509ms
+[debug]       Load.apply: finalTransforms took 112.798734ms
+[debug]       Load.apply: config.delegates took 1.69055ms
+[debug]       Load.apply: Def.make(settings)... took 1530.173032ms
+[debug]       Load.apply: structureIndex took 336.420822ms
+[debug]       Load.apply: mkStreams took 0.011357ms
+[info] loading project definition from /home/max/scala1/mylist/project
+[debug] Evaluating tasks: bloopInstall
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[success] Generated .bloop/mylist-build.json
+[success] Total time: 38 s, completed Jun 19, 2022 5:14:38 PM
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 78471.945291ms
+[debug]     Load.loadUnit: defsScala took 0.032314ms
+[debug] [Loading] Scanning directory /home/max/scala1/mylist
+[debug]       Load.loadUnit: mkEval took 0.723002ms
+[debug] [Loading] Found root project root w/ remaining 
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(bloop.integrations.sbt.BloopPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(bloop.integrations.sbt.BloopPlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,bloop.integrations.sbt.BloopPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 18.620946 ms
+[info] loading settings for project root from build.sbt ...
+[debug]         Load.resolveProject(root) took 159.699356ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id root, base: /home/max/scala1/mylist, plugins: List(<none>))) took 198.976033ms
+[debug] [Loading] Done in /home/max/scala1/mylist, returning: (root)
+[debug]     Load.loadUnit: loadedProjectsRaw took 702.8011ms
+[debug]     Load.loadUnit: cleanEvalClasses took 1.965675ms
+[debug]   Load.loadUnit(file:/home/max/scala1/mylist/, ...) took 79189.151325ms
+[debug] Load.apply: load took 79834.230669ms
+[debug] Load.apply: resolveProjects took 1.658786ms
+[debug] Load.apply: finalTransforms took 147.32918ms
+[debug] Load.apply: config.delegates took 1.454961ms
+[debug] Load.apply: Def.make(settings)... took 1231.469512ms
+[debug] Load.apply: structureIndex took 319.449074ms
+[debug] Load.apply: mkStreams took 0.010612ms
+[info] set current project to MyList (in build file:/home/max/scala1/mylist/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(bloopInstall, None, None)
+[debug] Evaluating tasks: bloopInstall
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
