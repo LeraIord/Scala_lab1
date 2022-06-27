@@ -1,0 +1,13 @@
+[0m[[0m[33mwarn[0m] [0m[0m[33m-- Warning: /home/max/scala1/mylist/src/test/scala/MySuite.scala:116:3 ---------[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m116 |[0m   assertEquals(obtained, expected)[0m
+[0m[[0m[33mwarn[0m] [0m[0m    |   [33m^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m    |   Line is indented too far to the left, or a `}` is missing[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m-- Warning: /home/max/scala1/mylist/src/test/scala/MySuite.scala:122:3 ---------[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m122 |[0m   assertEquals(obtained, expected)[0m
+[0m[[0m[33mwarn[0m] [0m[0m    |   [33m^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m    |   Line is indented too far to the left, or a `}` is missing[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m-- Warning: /home/max/scala1/mylist/src/test/scala/MySuite.scala:128:3 ---------[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m128 |[0m   assertEquals(obtained, expected)[0m
+[0m[[0m[33mwarn[0m] [0m[0m    |   [33m^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m    |   Line is indented too far to the left, or a `}` is missing[0m
+[0m[[0m[33mwarn[0m] [0m[0mthree warnings found[0m

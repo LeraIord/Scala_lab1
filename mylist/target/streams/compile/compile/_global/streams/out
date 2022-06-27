@@ -1,0 +1,5 @@
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /home/max/scala1/mylist/src/main/scala/Main.scala:83:7 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m83 |[0m  List.zipWith(u, v, ([36mx[0m, [36my[0m) => x * y).foldLeft([31m0[0m)(_ + _) [0m
+[0m[[0m[31merror[0m] [0m[0m   |  [31m^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |  value zipWith is not a member of object List[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

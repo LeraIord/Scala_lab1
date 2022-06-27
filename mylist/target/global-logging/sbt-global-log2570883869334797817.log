@@ -1,0 +1,55 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(;Test/compile; collectAnalyses, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0mlsp-definition json request: {"textDocument":{"uri":"file:///home/max/scala1/mylist/src/main/scala/Main.scala"},"position":{"line":114,"character":1}}[0m
+[0m[[0m[0mdebug[0m] [0m[0mlsp-definition found line: def multiplication(lst: List[Int]): List[Int] = lst match {[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(Test/compile, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskStart, {"taskId":{"id":"7","parents":[]},"eventTime":1656335789673,"message":"Compiling root","dataKind":"compile-task","data":{"target":{"uri":"file:/home/max/scala1/mylist/#root/Compile"}}})[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/max/scala1/mylist/target/scala-3.1.2/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":3,"message":"compiling 1 Scala source to /home/max/scala1/mylist/target/scala-3.1.2/classes ..."})[0m
+[0m[[0m[0mdebug[0m] [0m[0msymbol ef[0m
+[0m[[0m[0mdebug[0m] [0m[0mlsp-definition potentials: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mlsp-definition locations Vector()[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///home/max/scala1/mylist/src/main/scala/Main.scala"},"buildTarget":{"uri":"file:/home/max/scala1/mylist/#root/Compile"},"diagnostics":[{"range":{"start":{"line":116,"character":17},"end":{"line":116,"character":23}},"severity":1,"source":"sbt","message":"value ++ is not a member of List[Int]"}],"reset":false})[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /home/max/scala1/mylist/src/main/scala/Main.scala:117:21 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m117 |[0m    (lst.head :: lst ++ List(lst.last))[0m
+[0m[[0m[31merror[0m] [0m[0m    |                 [31m^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |                 value ++ is not a member of List[Int][0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"\u001b[31m-- [E008] Not Found Error: /home/max/scala1/mylist/src/main/scala/Main.scala:117:21 \u001b[0m\n\u001b[31m117 |\u001b[0m    (lst.head :: lst ++ List(lst.last))\n    |                 \u001b[31m^^^^^^\u001b[0m\n    |                 value ++ is not a member of List[Int]"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///home/max/scala1/mylist/src/main/scala/Main.scala"},"buildTarget":{"uri":"file:/home/max/scala1/mylist/#root/Compile"},"diagnostics":[{"range":{"start":{"line":116,"character":29},"end":{"line":116,"character":37}},"severity":1,"source":"sbt","message":"value last is not a member of List[Int] - did you mean lst.wait?"}],"reset":false})[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /home/max/scala1/mylist/src/main/scala/Main.scala:117:33 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m117 |[0m    (lst.head :: lst ++ List(lst.last))[0m
+[0m[[0m[31merror[0m] [0m[0m    |                             [31m^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |      value last is not a member of List[Int] - did you mean lst.wait?[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"\u001b[31m-- [E008] Not Found Error: /home/max/scala1/mylist/src/main/scala/Main.scala:117:33 \u001b[0m\n\u001b[31m117 |\u001b[0m    (lst.head :: lst ++ List(lst.last))\n    |                             \u001b[31m^^^^^^^^\u001b[0m\n    |      value last is not a member of List[Int] - did you mean lst.wait?"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///home/max/scala1/mylist/src/main/scala/Main.scala"},"buildTarget":{"uri":"file:/home/max/scala1/mylist/#root/Compile"},"diagnostics":[{"range":{"start":{"line":126,"character":8},"end":{"line":126,"character":13}},"severity":1,"source":"sbt","message":"value ++ is not a member of List[T]"}],"reset":false})[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /home/max/scala1/mylist/src/main/scala/Main.scala:127:11 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m127 |[0m        xs ++ List(y)[0m
+[0m[[0m[31merror[0m] [0m[0m    |        [31m^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |        value ++ is not a member of List[T][0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"\u001b[31m-- [E008] Not Found Error: /home/max/scala1/mylist/src/main/scala/Main.scala:127:11 \u001b[0m\n\u001b[31m127 |\u001b[0m        xs ++ List(y)\n    |        \u001b[31m^^^^^\u001b[0m\n    |        value ++ is not a member of List[T]"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///home/max/scala1/mylist/src/main/scala/Main.scala"},"buildTarget":{"uri":"file:/home/max/scala1/mylist/#root/Compile"},"diagnostics":[{"range":{"start":{"line":131,"character":4},"end":{"line":131,"character":17}},"severity":1,"source":"sbt","message":"value tryHead is not a member of List[List[T]]"}],"reset":false})[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /home/max/scala1/mylist/src/main/scala/Main.scala:132:10 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m132 |[0m    lists.tryHead [33mmatch[0m {[0m
+[0m[[0m[31merror[0m] [0m[0m    |    [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |    value tryHead is not a member of List[List[T]][0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"\u001b[31m-- [E008] Not Found Error: /home/max/scala1/mylist/src/main/scala/Main.scala:132:10 \u001b[0m\n\u001b[31m132 |\u001b[0m    lists.tryHead \u001b[33mmatch\u001b[0m {\n    |    \u001b[31m^^^^^^^^^^^^^\u001b[0m\n    |    value tryHead is not a member of List[List[T]]"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///home/max/scala1/mylist/src/main/scala/Main.scala"},"buildTarget":{"uri":"file:/home/max/scala1/mylist/#root/Compile"},"diagnostics":[{"range":{"start":{"line":134,"character":19},"end":{"line":134,"character":23}},"severity":1,"source":"sbt","message":"Not found: head"}],"reset":false})[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /home/max/scala1/mylist/src/main/scala/Main.scala:135:19 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m135 |[0m        [33mval[0m [36minit[0m = head.map([36mn[0m => List(n))[0m
+[0m[[0m[31merror[0m] [0m[0m    |                   [31m^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |                   Not found: head[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"\u001b[31m-- [E006] Not Found Error: /home/max/scala1/mylist/src/main/scala/Main.scala:135:19 \u001b[0m\n\u001b[31m135 |\u001b[0m        \u001b[33mval\u001b[0m \u001b[36minit\u001b[0m = head.map(\u001b[36mn\u001b[0m => List(n))\n    |                   \u001b[31m^^^^\u001b[0m\n    |                   Not found: head"})[0m
+[0m[[0m[31merror[0m] [0m[0m5 errors found[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"5 errors found"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///home/max/scala1/mylist/src/main/scala/Main.scala"},"buildTarget":{"uri":"file:/home/max/scala1/mylist/#root/Compile"},"diagnostics":[{"range":{"start":{"line":116,"character":17},"end":{"line":116,"character":23}},"severity":1,"source":"sbt","message":"value ++ is not a member of List[Int]"},{"range":{"start":{"line":116,"character":29},"end":{"line":116,"character":37}},"severity":1,"source":"sbt","message":"value last is not a member of List[Int] - did you mean lst.wait?"},{"range":{"start":{"line":126,"character":8},"end":{"line":126,"character":13}},"severity":1,"source":"sbt","message":"value ++ is not a member of List[T]"},{"range":{"start":{"line":131,"character":4},"end":{"line":131,"character":17}},"severity":1,"source":"sbt","message":"value tryHead is not a member of List[List[T]]"},{"range":{"start":{"line":134,"character":19},"end":{"line":134,"character":23}},"severity":1,"source":"sbt","message":"Not found: head"}],"reset":true})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskFinish, {"taskId":{"id":"7","parents":[]},"eventTime":1656335810966,"message":"Compiled root","status":2,"dataKind":"compile-report","data":{"target":{"uri":"file:/home/max/scala1/mylist/#root/Compile"},"errors":5,"warnings":0,"time":21293}})[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched json error for requestId None: {"code":-32603,"message":"(Compile / \u001b[31mcompileIncremental\u001b[0m) Compilation failed"}[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"(Compile / \u001b[31mcompileIncremental\u001b[0m) Compilation failed"})[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 23 s, completed Jun 27, 2022 4:16:51 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
